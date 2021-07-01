@@ -11,6 +11,12 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
+    "paths": {
+      "@igorissen/ngx-tmdb-api": [
+        "dist/ngx-tmdb-api/ngx-tmdb-api",
+        "dist/ngx-tmdb-api"
+      ]
+    },
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

@@ -1,0 +1,30 @@
+{
+  "name": "@igorissen/ngx-tmdb-api",
+  "version": "0.0.1",
+  "description": "TMDB api wrapper for Angular",
+  "keywords": [
+    "tmdb",
+    "angular",
+    "ivy"
+  ],
+  "author": {
+    "name": "Ismaël Gorissen",
+    "email": "ismael.gorissen@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igorissen/ngx-tmdb-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/igorissen/ngx-tmdb-api/issues",
+    "email": "ismael.gorissen@gmail.com"
+  },
+  "peerDependencies": {
+    "@angular/common": "^12.1.0",
+    "@angular/core": "^12.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.2.0"
+  }
+}
