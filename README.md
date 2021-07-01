@@ -1,27 +1,95 @@
-# NgxTmdbApi
+# ngx-tmdb-api
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+Angular wrapper library for [TheMovieDatabase API](https://developers.themoviedb.org/3/getting-started/introduction).
 
-## Development server
+<span style="color: red;"><strong>NOTE</strong>: Only version 3 of the API is implemented.</span>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Getting started
 
-## Code scaffolding
+### Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+$ npm i -E @igorissen/ngx-tmdb-api
+```
 
-## Build
+### Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Import `NgxTmdbApiModule` in your AppModule and configure it with your [TheMovieDatabase API key](https://www.themoviedb.org/settings/api).
 
-## Running unit tests
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { NgxTmdbApiModule } from '@igorissen/ngx-tmdb-api';
+import { AppComponent } from './app.component';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+  declarations: [ AppComponent ],
+  imports: [
+    BrowserModule,
+    NgxTmdbApiModule.forRoot({ apiKey: 'YOUR_API_KEY_HERE' })
+  ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule {}
+```
 
-## Running end-to-end tests
+Now you can import available resources and fetch the data you need. <span style="color: red;">Only MOVIES resource is available</span>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Please refer to [TheMovieDatabase API documentation](https://developers.themoviedb.org/3/getting-started) for path and query parameters name.
 
-## Further help
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { Movies } from '@igorissen/ngx-tmdb-api';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.less']
+})
+export class AppComponent implements OnInit {
+  public ngOnInit(): void {
+    Movies.fetchMovieDetails({
+      pathParams: { movie_id: '384018' },
+      queryParams: { language: 'FR', append_to_response: 'videos,images' }
+    }).subscribe(console.log);
+  }
+}
+```
+
+## Roadmap
+
+### v3
+
+- [] Add `Account` resources
+- [] Add `Authentication` resources
+- [] Add `Certifications` resources
+- [] Add `Changes` resources
+- [] Add `Collections` resources
+- [] Add `Companies` resources
+- [] Add `Configuration` resources
+- [] Add `Credits` resources
+- [] Add `Discover` resources
+- [] Add `Find` resources
+- [] Add `Genres` resources
+- [] Add `Guest Sessions` resources
+- [] Add `Keywords` resources
+- [] Add `Lists` resources
+- [x] Add [Movies](https://developers.themoviedb.org/3/movies/get-movie-details) resources
+- [] Add `Networks` resources
+- [] Add `Trending` resources
+- [] Add `People` resources
+- [] Add `Reviews` resources
+- [] Add `Search` resources
+- [] Add `TV` resources
+- [] Add `TV Seasons` resources
+- [] Add `TV Episodes` resources
+- [] Add `TV Episode Groups` resources
+- [] Add `Watch Providers` resources
+
+
+
+### v4
+
+- [] Add `Account` resources
+- [] Add `Auth` resources
+- [] Add `List` resources
