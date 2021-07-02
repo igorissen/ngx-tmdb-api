@@ -1,8 +1,11 @@
 import {
+  TMDbAccountStates,
   TMDbAlternativeTitle,
   TMDbCast,
   TMDbChange,
+  TMDbChanges,
   TMDbCountryWatchProviders,
+  TMDbCredits,
   TMDbCrew,
   TMDbExternalIds,
   TMDbGenre,
@@ -11,9 +14,11 @@ import {
   TMDbMediaKeywords,
   TMDbMediaTranslations,
   TMDbMediaVideos,
+  TMDbMediaWatchProviders,
   TMDbPaginated,
   TMDbProductionCompany,
   TMDbProductionCountry,
+  TMDbRateRequestDTO,
   TMDbReleaseDate,
   TMDbReview,
   TMDbSpokenLanguage
@@ -48,23 +53,9 @@ export type TMDbMovieDetails = {
   vote_count?: number;
   media_type?: 'movie';
 };
-export type TMDbMovieAccountStates = {
-  id?: number;
-  favorite?: boolean;
-  watchlist?: boolean;
-  rated?: boolean | { value?: number };
-};
 export type TMDbMovieAlternativeTitles = {
   id?: number;
   titles?: TMDbAlternativeTitle[];
-};
-export type TMDbMovieChanges = {
-  changes?: TMDbChange[];
-};
-export type TMDbMovieCredits = {
-  id?: number;
-  cast?: TMDbCast[];
-  crew?: TMDbCrew[];
 };
 export type TMDbMovieReleaseDate = {
   iso_3166_1?: string;
@@ -74,13 +65,9 @@ export type TMDbMovieReleaseDates = {
   id?: number;
   results?: TMDbMovieReleaseDate[];
 };
-export type TMDbMovieWatchProviders = {
-  id?: number;
-  results?: {
-    [country: string]: TMDbCountryWatchProviders;
-  };
-};
 
+export type TMDbMovieWatchProviders = TMDbMediaWatchProviders;
+export type TMDbMovieAccountStates = TMDbAccountStates;
 export type TMDbMoviePopular = TMDbPaginated<TMDbMovieDetails>;
 export type TMDbMovieTopRated = TMDbPaginated<TMDbMovieDetails>;
 export type TMDbMovieUpcoming = TMDbPaginated<TMDbMovieDetails>;
@@ -94,7 +81,7 @@ export type TMDbMovieSimilarMovies = TMDbPaginated<TMDbMovieDetails>;
 export type TMDbMovieReviews = TMDbPaginated<TMDbReview>;
 export type TMDbMovieLists = TMDbPaginated<TMDbList>;
 export type TMDbMovieNowPlaying = TMDbPaginated<TMDbMovieDetails>;
+export type TMDbMovieCredits = TMDbCredits;
+export type TMDbMovieChanges = TMDbChanges;
 
-export type RateMovieRequestDTO = {
-  value: number;
-};
+export type TMDbRateMovieRequestDTO = TMDbRateRequestDTO;

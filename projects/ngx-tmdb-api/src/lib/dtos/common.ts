@@ -45,6 +45,19 @@ export type TMDbChange = {
   key?: string;
   items?: TMDbChangeItem[];
 };
+export type TMDbChanges = {
+  changes?: TMDbChange[];
+};
+export type TMDbRole = {
+  credit_id?: string;
+  character?: string;
+  episode_count?: number;
+};
+export type TMDbJob = {
+  credit_id?: string;
+  job?: string;
+  episode_count?: number;
+};
 export type TMDbCast = {
   cast_id?: number;
   character?: string;
@@ -72,6 +85,9 @@ export type TMDbCast = {
   first_air_date?: string;
   origin_country?: string[];
   media_type?: string;
+  known_for_department?: string;
+  total_episode_count?: number;
+  roles?: TMDbRole[];
 };
 export type TMDbCrew = {
   credit_id?: string;
@@ -99,6 +115,9 @@ export type TMDbCrew = {
   original_name?: string;
   first_air_date?: string;
   media_type?: string;
+  known_for_department?: string;
+  total_episode_count?: string;
+  jobs?: TMDbJob[];
 };
 export type TMDbExternalIds = {
   imdb_id?: string;
@@ -170,6 +189,10 @@ export type TMDbPaginated<T> = {
   };
   results?: T[];
 };
+export type TMDbResults<T> = {
+  id?: number;
+  results?: T[];
+};
 export type TMDbReview = {
   id?: string;
   author?: string;
@@ -205,4 +228,44 @@ export type TMDbCountryWatchProviders = {
   flatrate?: TMDbWatchProvider[];
   rent?: TMDbWatchProvider[];
   buy?: TMDbWatchProvider[];
+};
+export type TMDbNetwork = {
+  id?: number;
+  name?: string;
+  logo_path?: string;
+  origin_country?: string;
+};
+export type TMDbAccountStates = {
+  id?: number;
+  favorite?: boolean;
+  watchlist?: boolean;
+  rated?: boolean | { value?: number };
+};
+export type TMDbCredits = {
+  id?: number;
+  cast?: TMDbCast[];
+  crew?: TMDbCrew[];
+};
+export type TMDbContentRating = {
+  iso_3166_1?: string;
+  rating?: string;
+};
+export type TMDbMediaWatchProviders = {
+  id?: number;
+  results?: {
+    [country: string]: TMDbCountryWatchProviders;
+  };
+};
+export type TMDbEpisodeGroup = {
+  description?: string;
+  episode_count?: number;
+  group_count?: number;
+  id?: string;
+  name?: string;
+  network?: TMDbNetwork;
+  type?: number;
+};
+
+export type TMDbRateRequestDTO = {
+  value: number;
 };

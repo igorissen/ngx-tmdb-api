@@ -19,6 +19,7 @@ export type QueryParameters = {
 
 export type PathParameters = {
   movie_id?: number | string;
+  tv_id?: number | string;
 };
 
 export type RequestOptions<T> = {
