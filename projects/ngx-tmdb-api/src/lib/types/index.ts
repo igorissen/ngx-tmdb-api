@@ -14,6 +14,7 @@ export type QueryParameters = {
   end_date?: string;
   include_image_language?: string;
   region?: string;
+  watch_region?: string;
 };
 
 export type PathParameters = {

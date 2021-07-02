@@ -56,9 +56,9 @@ export class AppComponent implements OnInit {
 }
 ```
 
-## Roadmap
+### Available Resources
 
-### v3
+#### v3
 
 - [] Add `Account` resources
 - [] Add `Authentication` resources
@@ -74,7 +74,7 @@ export class AppComponent implements OnInit {
 - [] Add `Guest Sessions` resources
 - [] Add `Keywords` resources
 - [] Add `Lists` resources
-- [x] Add [Movies](https://developers.themoviedb.org/3/movies/get-movie-details) resources
+- [Movies](https://developers.themoviedb.org/3/movies)
 - [] Add `Networks` resources
 - [] Add `Trending` resources
 - [] Add `People` resources
@@ -84,12 +84,4 @@ export class AppComponent implements OnInit {
 - [] Add `TV Seasons` resources
 - [] Add `TV Episodes` resources
 - [] Add `TV Episode Groups` resources
-- [] Add `Watch Providers` resources
-
-
-
-### v4
-
-- [] Add `Account` resources
-- [] Add `Auth` resources
-- [] Add `List` resources
+- [Watch Providers](https://developers.themoviedb.org/3/watch-providers)
