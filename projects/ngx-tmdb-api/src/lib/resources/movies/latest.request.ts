@@ -1,5 +1,5 @@
 /**
- * https://developers.themoviedb.org/3/movies/get-upcoming
+ * https://developers.themoviedb.org/3/movies/get-latest-movie
  */
 
 import { Observable } from 'rxjs';

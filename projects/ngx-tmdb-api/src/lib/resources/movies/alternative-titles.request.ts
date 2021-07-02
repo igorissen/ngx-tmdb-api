@@ -1,5 +1,5 @@
 /**
- *
+ * https://developers.themoviedb.org/3/movies/get-movie-alternative-titles
  */
 
 import { Observable } from 'rxjs';
