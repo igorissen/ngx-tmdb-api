@@ -60,28 +60,28 @@ export class AppComponent implements OnInit {
 
 #### v3
 
-- [] Add `Account` resources
-- [] Add `Authentication` resources
-- [] Add `Certifications` resources
-- [] Add `Changes` resources
-- [] Add `Collections` resources
-- [] Add `Companies` resources
-- [] Add `Configuration` resources
-- [] Add `Credits` resources
-- [] Add `Discover` resources
-- [] Add `Find` resources
-- [] Add `Genres` resources
-- [] Add `Guest Sessions` resources
-- [] Add `Keywords` resources
-- [] Add `Lists` resources
+- [ ] Add `Account` resources
+- [ ] Add `Authentication` resources
+- [ ] Add `Certifications` resources
+- [ ] Add `Changes` resources
+- [ ] Add `Collections` resources
+- [ ] Add `Companies` resources
+- [ ] Add `Configuration` resources
+- [ ] Add `Credits` resources
+- [ ] Add `Discover` resources
+- [ ] Add `Find` resources
+- [ ] Add `Genres` resources
+- [ ] Add `Guest Sessions` resources
+- [ ] Add `Keywords` resources
+- [ ] Add `Lists` resources
 - [Movies](https://developers.themoviedb.org/3/movies)
-- [] Add `Networks` resources
-- [] Add `Trending` resources
-- [] Add `People` resources
-- [] Add `Reviews` resources
-- [] Add `Search` resources
-- [] Add `TV` resources
-- [] Add `TV Seasons` resources
-- [] Add `TV Episodes` resources
-- [] Add `TV Episode Groups` resources
+- [ ] Add `Networks` resources
+- [ ] Add `Trending` resources
+- [ ] Add `People` resources
+- [ ] Add `Reviews` resources
+- [ ] Add `Search` resources
+- [TV](https://developers.themoviedb.org/3/tv)
+- [ ] Add `TV Seasons` resources
+- [ ] Add `TV Episodes` resources
+- [ ] Add `TV Episode Groups` resources
 - [Watch Providers](https://developers.themoviedb.org/3/watch-providers)
