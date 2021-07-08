@@ -33,8 +33,6 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 
-Now you can import available resources and fetch the data you need. <span style="color: red;">Only MOVIES resource is available</span>
-
 Please refer to [TheMovieDatabase API documentation](https://developers.themoviedb.org/3/getting-started) for path and query parameters name.
 
 ```typescript
@@ -60,7 +58,7 @@ export class AppComponent implements OnInit {
 
 #### v3
 
-- [ ] Add `Account` resources
+- [Account](https://developers.themoviedb.org/3/account)
 - [ ] Add `Authentication` resources
 - [ ] Add `Certifications` resources
 - [ ] Add `Changes` resources
