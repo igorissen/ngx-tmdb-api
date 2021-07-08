@@ -15,11 +15,13 @@ export type QueryParameters = {
   include_image_language?: string;
   region?: string;
   watch_region?: string;
+  sort_by?: string;
 };
 
 export type PathParameters = {
   movie_id?: number | string;
   tv_id?: number | string;
+  account_id?: number | string;
 };
 
 export type RequestOptions<T> = {

@@ -265,6 +265,12 @@ export type TMDbEpisodeGroup = {
   network?: TMDbNetwork;
   type?: number;
 };
+export type TMDbGravatar = {
+  hash?: string;
+};
+export type TMDbAvatar = {
+  gravatar?: TMDbGravatar;
+};
 
 export type TMDbRateRequestDTO = {
   value: number;
