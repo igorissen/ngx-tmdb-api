@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/tv/get-tv-content-ratings
- */
-
 import { Observable } from 'rxjs';
 import { TMDbTvContentRatings } from '../../dtos/tv';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchTvContentRatings = (
+export const getContentRatings = (
   options: RequestOptions<never>
 ): Observable<TMDbTvContentRatings | null> => {
   return new Request<never, TMDbTvContentRatings>({

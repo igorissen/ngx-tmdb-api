@@ -18,7 +18,8 @@ import {
   TMDbPaginated,
   TMDbProductionCompany,
   TMDbRateRequestDTO,
-  TMDbResults
+  TMDbResults,
+  TMDbReview
 } from './common';
 
 export type TMDbTvEpisodeDetails = {
@@ -98,5 +99,6 @@ export type TMDbTvPopular = TMDbPaginated<TMDbTvDetails>;
 export type TMDbTvAiringToday = TMDbPaginated<TMDbTvDetails>;
 export type TMDbTvOnTheAir = TMDbPaginated<TMDbTvDetails>;
 export type TMDbTvEpisodeGroups = TMDbResults<TMDbEpisodeGroup>;
+export type TMDbTvReviews = TMDbPaginated<TMDbReview>;
 
 export type TMDbRateTvRequestDTO = TMDbRateRequestDTO;

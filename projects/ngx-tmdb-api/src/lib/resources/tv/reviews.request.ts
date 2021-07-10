@@ -1,12 +1,12 @@
 import { Observable } from 'rxjs';
-import { TMDbTvSimilarTvShows } from '../../dtos/tv';
+import { TMDbTvReviews } from '../../dtos/tv';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const getSimilarTvShows = (
+export const getReviews = (
   options: RequestOptions<never>
-): Observable<TMDbTvSimilarTvShows | null> => {
-  return new Request<never, TMDbTvSimilarTvShows>({
+): Observable<TMDbTvReviews | null> => {
+  return new Request<never, TMDbTvReviews>({
     ...options,
     path: `/tv/${options.pathParams?.tv_id}/similar`
   }).execute();

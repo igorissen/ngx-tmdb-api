@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/tv/get-tv-images
- */
-
 import { Observable } from 'rxjs';
 import { TMDbTvImages } from '../../dtos/tv';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchTvImages = (
+export const getImages = (
   options: RequestOptions<never>
 ): Observable<TMDbTvImages | null> => {
   return new Request<never, TMDbTvImages>({

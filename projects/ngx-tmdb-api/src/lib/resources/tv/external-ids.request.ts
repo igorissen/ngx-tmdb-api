@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/tv/get-tv-external-ids
- */
-
 import { Observable } from 'rxjs';
 import { TMDbTvExternalIds } from '../../dtos/tv';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchTvExternalIds = (
+export const getExternalIds = (
   options: RequestOptions<never>
 ): Observable<TMDbTvExternalIds | null> => {
   return new Request<never, TMDbTvExternalIds>({

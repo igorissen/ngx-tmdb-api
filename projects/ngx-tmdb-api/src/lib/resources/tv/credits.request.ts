@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/tv/get-tv-credits
- */
-
 import { Observable } from 'rxjs';
 import { TMDbTvCredits } from '../../dtos/tv';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchTvCredits = (
+export const getCredits = (
   options: RequestOptions<never>
 ): Observable<TMDbTvCredits | null> => {
   return new Request<never, TMDbTvCredits>({

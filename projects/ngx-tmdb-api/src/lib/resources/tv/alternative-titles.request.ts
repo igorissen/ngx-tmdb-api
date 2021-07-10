@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/tv/get-tv-alternative-titles
- */
-
 import { Observable } from 'rxjs';
 import { TMDbTvAlternativeTitles } from '../../dtos/tv';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchTvAlternativeTitles = (
+export const getAlternativeTitles = (
   options: RequestOptions<never>
 ): Observable<TMDbTvAlternativeTitles | null> => {
   return new Request<never, TMDbTvAlternativeTitles>({

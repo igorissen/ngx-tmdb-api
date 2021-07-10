@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/tv/get-tv-details
- */
-
 import { Observable } from 'rxjs';
 import { TMDbTvDetails } from '../../dtos/tv';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchTvDetails = (
+export const getDetails = (
   options: RequestOptions<never>
 ): Observable<TMDbTvDetails | null> => {
   return new Request<never, TMDbTvDetails>({
