@@ -271,6 +271,11 @@ export type TMDbGravatar = {
 export type TMDbAvatar = {
   gravatar?: TMDbGravatar;
 };
+export type TMDbCertification = {
+  certification?: string;
+  meaning?: string;
+  order?: number;
+};
 
 export type TMDbRateRequestDTO = {
   value: number;

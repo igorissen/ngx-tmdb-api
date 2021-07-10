@@ -4,6 +4,7 @@
 
 export * from './lib/dtos/account';
 export * from './lib/dtos/authentication';
+export * from './lib/dtos/certifications';
 export * from './lib/dtos/common';
 export * from './lib/dtos/lists';
 export * from './lib/dtos/movies';
@@ -16,6 +17,7 @@ export * from './lib/models';
 
 export * from './lib/resources/account';
 export * from './lib/resources/authentication';
+export * from './lib/resources/certifications';
 export * from './lib/resources/movies';
 export * from './lib/resources/tv';
 export * from './lib/resources/watch-providers';
