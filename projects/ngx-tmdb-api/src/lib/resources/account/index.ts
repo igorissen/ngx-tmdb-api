@@ -1,31 +1,31 @@
-import { fetchAccountCreatedLists } from './created-lists.request';
-import { fetchAccountDetails } from './details.request';
+import { getCreatedLists } from './created-lists.request';
+import { getDetails } from './details.request';
 import {
-  fetchAccountFavoriteMovies,
-  fetchAccountFavoriteTvShows,
+  getFavoriteMovies,
+  getFavoriteTvShows,
   markAsFavorite
 } from './favorite.request';
 import {
-  fetchAccountRatedMovies,
-  fetchAccountRatedTvEpisodes,
-  fetchAccountRatedTvShows
+  getRatedMovies,
+  getRatedTvEpisodes,
+  getRatedTvShows
 } from './rated.request';
 import {
-  fetchAccountMoviesWatchlist,
-  fetchAccountTvShowsWatchlist,
+  getMovieWatchlist,
+  getTvShowsWatchlist,
   addToWatchlist
 } from './watchlist.request';
 
 export const Account = {
-  fetchAccountCreatedLists,
-  fetchAccountDetails,
-  fetchAccountFavoriteMovies,
-  fetchAccountFavoriteTvShows,
+  getCreatedLists,
+  getDetails,
+  getFavoriteMovies,
+  getFavoriteTvShows,
   markAsFavorite,
-  fetchAccountRatedMovies,
-  fetchAccountRatedTvEpisodes,
-  fetchAccountRatedTvShows,
-  fetchAccountMoviesWatchlist,
-  fetchAccountTvShowsWatchlist,
+  getRatedMovies,
+  getRatedTvEpisodes,
+  getRatedTvShows,
+  getMovieWatchlist,
+  getTvShowsWatchlist,
   addToWatchlist
 };

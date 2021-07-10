@@ -8,7 +8,7 @@ import { TMDbResponseStatus } from '../../dtos/common';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchAccountFavoriteMovies = (
+export const getFavoriteMovies = (
   options: RequestOptions<never>
 ): Observable<TMDbAccountFavoriteMovies | null> => {
   return new Request<never, TMDbAccountFavoriteMovies>({
@@ -17,7 +17,7 @@ export const fetchAccountFavoriteMovies = (
   }).execute();
 };
 
-export const fetchAccountFavoriteTvShows = (
+export const getFavoriteTvShows = (
   options: RequestOptions<never>
 ): Observable<TMDbAccountFavoriteTvShows | null> => {
   return new Request<never, TMDbAccountFavoriteTvShows>({

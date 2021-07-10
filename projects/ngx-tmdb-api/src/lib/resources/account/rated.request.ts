@@ -7,7 +7,7 @@ import {
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchAccountRatedMovies = (
+export const getRatedMovies = (
   options: RequestOptions<never>
 ): Observable<TMDbAccountRatedMovies | null> => {
   return new Request<never, TMDbAccountRatedMovies>({
@@ -16,7 +16,7 @@ export const fetchAccountRatedMovies = (
   }).execute();
 };
 
-export const fetchAccountRatedTvShows = (
+export const getRatedTvShows = (
   options: RequestOptions<never>
 ): Observable<TMDbAccountRatedTvShows | null> => {
   return new Request<never, TMDbAccountRatedTvShows>({
@@ -25,7 +25,7 @@ export const fetchAccountRatedTvShows = (
   }).execute();
 };
 
-export const fetchAccountRatedTvEpisodes = (
+export const getRatedTvEpisodes = (
   options: RequestOptions<never>
 ): Observable<TMDbAccountRatedTvEpisodes | null> => {
   return new Request<never, TMDbAccountRatedTvEpisodes>({

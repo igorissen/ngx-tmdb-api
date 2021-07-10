@@ -8,7 +8,7 @@ import { TMDbResponseStatus } from '../../dtos/common';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchAccountMoviesWatchlist = (
+export const getMovieWatchlist = (
   options: RequestOptions<never>
 ): Observable<TMDbAccountMoviesWatchlist | null> => {
   return new Request<never, TMDbAccountMoviesWatchlist>({
@@ -17,7 +17,7 @@ export const fetchAccountMoviesWatchlist = (
   }).execute();
 };
 
-export const fetchAccountTvShowsWatchlist = (
+export const getTvShowsWatchlist = (
   options: RequestOptions<never>
 ): Observable<TMDbAccountTvShowsWatchlist | null> => {
   return new Request<never, TMDbAccountTvShowsWatchlist>({
