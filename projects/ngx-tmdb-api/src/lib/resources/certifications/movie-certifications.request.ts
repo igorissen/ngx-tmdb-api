@@ -3,7 +3,7 @@ import { TMDbCertificationMovieCertifications } from '../../dtos/certifications'
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchMovieCertificationsList = (
+export const getMovieCertifications = (
   options: RequestOptions<never>
 ): Observable<TMDbCertificationMovieCertifications | null> => {
   return new Request<never, TMDbCertificationMovieCertifications>({
