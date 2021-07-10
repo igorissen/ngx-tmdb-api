@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/movies/get-movie-keywords
- */
-
 import { Observable } from 'rxjs';
 import { TMDbMovieKeywords } from '../../dtos/movies';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchMovieKeywords = (
+export const getKeywords = (
   options: RequestOptions<never>
 ): Observable<TMDbMovieKeywords | null> => {
   return new Request<never, TMDbMovieKeywords>({

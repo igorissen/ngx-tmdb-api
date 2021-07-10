@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/movies/get-movie-changes
- */
-
 import { Observable } from 'rxjs';
 import { TMDbMovieChanges } from '../../dtos/movies';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchMovieChanges = (
+export const getChanges = (
   options: RequestOptions<never>
 ): Observable<TMDbMovieChanges | null> => {
   return new Request<never, TMDbMovieChanges>({

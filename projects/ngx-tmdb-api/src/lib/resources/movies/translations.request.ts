@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/movies/get-movie-translations
- */
-
 import { Observable } from 'rxjs';
 import { TMDbMovieTranslations } from '../../dtos/movies';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchMovieTranslations = (
+export const getTranslations = (
   options: RequestOptions<never>
 ): Observable<TMDbMovieTranslations | null> => {
   return new Request<never, TMDbMovieTranslations>({

@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/movies/get-movie-lists
- */
-
 import { Observable } from 'rxjs';
 import { TMDbMovieLists } from '../../dtos/movies';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchMovieLists = (
+export const getLists = (
   options: RequestOptions<never>
 ): Observable<TMDbMovieLists | null> => {
   return new Request<never, TMDbMovieLists>({

@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/movies/get-movie-external-ids
- */
-
 import { Observable } from 'rxjs';
 import { TMDbMovieExternalIds } from '../../dtos/movies';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchMovieExternalIds = (
+export const getExternalIds = (
   options: RequestOptions<never>
 ): Observable<TMDbMovieExternalIds | null> => {
   return new Request<never, TMDbMovieExternalIds>({

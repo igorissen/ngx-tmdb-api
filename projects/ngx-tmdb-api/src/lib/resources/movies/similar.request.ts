@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/movies/get-similar-movies
- */
-
 import { Observable } from 'rxjs';
 import { TMDbMovieSimilarMovies } from '../../dtos/movies';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchMovieSimilar = (
+export const getSimilarMovies = (
   options: RequestOptions<never>
 ): Observable<TMDbMovieSimilarMovies | null> => {
   return new Request<never, TMDbMovieSimilarMovies>({

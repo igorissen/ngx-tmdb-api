@@ -1,48 +1,48 @@
-import { fetchMovieAccountStates } from './account-states.request';
-import { fetchMovieAlternativeTitles } from './alternative-titles.request';
-import { fetchMovieChanges } from './changes.request';
-import { fetchMovieCredits } from './credits.request';
-import { fetchMovieDetails } from './details.request';
-import { fetchMovieExternalIds } from './external-ids.request';
-import { fetchMovieImages } from './images.request';
-import { fetchMovieKeywords } from './keywords.request';
-import { fetchLatestMovie } from './latest.request';
-import { fetchMovieLists } from './lists.request';
-import { fetchNowPlayingMovies } from './now-playing.request';
-import { fetchPopularMovies } from './popular.request';
-import { rateMovie, deleteMovieRating } from './rating.request';
-import { fetchMovieRecommendations } from './recommendations.request';
-import { fetchMovieReleaseDates } from './release-dates.request';
-import { fetchMovieReviews } from './reviews.request';
-import { fetchMovieSimilar } from './similar.request';
-import { fetchTopRatedMovies } from './top-rated.request';
-import { fetchMovieTranslations } from './translations.request';
-import { fetchUpcomingMovies } from './upcoming.request';
-import { fetchMovieVideos } from './videos.request';
-import { fetchMovieWatchProviders } from './watch-providers.request';
+import { getAccountStates } from './account-states.request';
+import { getAlternativeTitles } from './alternative-titles.request';
+import { getChanges } from './changes.request';
+import { getCredits } from './credits.request';
+import { getDetails } from './details.request';
+import { getExternalIds } from './external-ids.request';
+import { getImages } from './images.request';
+import { getKeywords } from './keywords.request';
+import { getLatest } from './latest.request';
+import { getLists } from './lists.request';
+import { getNowPlaying } from './now-playing.request';
+import { getPopular } from './popular.request';
+import { rateMovie, deleteRating } from './rating.request';
+import { getRecommendations } from './recommendations.request';
+import { getReleaseDates } from './release-dates.request';
+import { getReviews } from './reviews.request';
+import { getSimilarMovies } from './similar.request';
+import { getTopRated } from './top-rated.request';
+import { getTranslations } from './translations.request';
+import { getUpcoming } from './upcoming.request';
+import { getVideos } from './videos.request';
+import { getWatchProviders } from './watch-providers.request';
 
 export const Movies = {
-  fetchMovieAccountStates,
-  fetchMovieAlternativeTitles,
-  fetchMovieChanges,
-  fetchMovieCredits,
-  fetchMovieDetails,
-  fetchMovieExternalIds,
-  fetchMovieImages,
-  fetchMovieKeywords,
-  fetchLatestMovie,
-  fetchMovieLists,
-  fetchNowPlayingMovies,
-  fetchPopularMovies,
+  getAccountStates,
+  getAlternativeTitles,
+  getChanges,
+  getCredits,
+  getDetails,
+  getExternalIds,
+  getImages,
+  getKeywords,
+  getLatest,
+  getLists,
+  getNowPlaying,
+  getPopular,
   rateMovie,
-  deleteMovieRating,
-  fetchMovieRecommendations,
-  fetchMovieReleaseDates,
-  fetchMovieReviews,
-  fetchMovieSimilar,
-  fetchTopRatedMovies,
-  fetchMovieTranslations,
-  fetchUpcomingMovies,
-  fetchMovieVideos,
-  fetchMovieWatchProviders
+  deleteRating,
+  getRecommendations,
+  getReleaseDates,
+  getReviews,
+  getSimilarMovies,
+  getTopRated,
+  getTranslations,
+  getUpcoming,
+  getVideos,
+  getWatchProviders
 };

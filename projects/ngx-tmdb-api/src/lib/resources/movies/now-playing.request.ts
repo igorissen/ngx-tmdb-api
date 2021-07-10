@@ -1,13 +1,9 @@
-/**
- * https://developers.themoviedb.org/3/movies/get-now-playing
- */
-
 import { Observable } from 'rxjs';
 import { TMDbMovieNowPlaying } from '../../dtos/movies';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-export const fetchNowPlayingMovies = (
+export const getNowPlaying = (
   options?: RequestOptions<never>
 ): Observable<TMDbMovieNowPlaying | null> => {
   return new Request<never, TMDbMovieNowPlaying>({

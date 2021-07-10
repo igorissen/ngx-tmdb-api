@@ -4,12 +4,7 @@ import { TMDbRateMovieRequestDTO } from '../../dtos/movies';
 import { Request } from '../../request';
 import { RequestOptions } from '../../types';
 
-/**
- * https://developers.themoviedb.org/3/movies/delete-movie-rating
- *
- * @param options
- */
-export const deleteMovieRating = (
+export const deleteRating = (
   options: RequestOptions<never>
 ): Observable<TMDbResponseStatus | null> => {
   return new Request<never, TMDbResponseStatus>({
@@ -19,11 +14,6 @@ export const deleteMovieRating = (
   }).execute();
 };
 
-/**
- * https://developers.themoviedb.org/3/movies/rate-movie
- *
- * @param options
- */
 export const rateMovie = (
   options: RequestOptions<TMDbRateMovieRequestDTO>
 ): Observable<TMDbResponseStatus | null> => {

@@ -46,7 +46,7 @@ import { Movies } from '@igorissen/ngx-tmdb-api';
 })
 export class AppComponent implements OnInit {
   public ngOnInit(): void {
-    Movies.fetchMovieDetails({
+    Movies.getDetails({
       pathParams: { movie_id: '384018' },
       queryParams: { language: 'FR', append_to_response: 'videos,images' }
     }).subscribe(console.log);
