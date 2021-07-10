@@ -14,7 +14,7 @@ export type TMDbCreateSessionWithLoginRequestDTO = {
 export type TMDbCreateSessionRequestDTO = {
   request_token: string;
 };
-export type TMDbCreateV3SessionFromV4SessionRequestDTO = {
+export type TMDbCreateSessionFromV4SessionRequestDTO = {
   access_token: string;
 };
 export type TMDbDeleteSessionRequestDTO = {

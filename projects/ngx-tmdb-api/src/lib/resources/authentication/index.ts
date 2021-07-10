@@ -1,7 +1,7 @@
 import { createGuestSession } from './guest-session.request';
 import {
   createSession,
-  createV3SessionFromV4Session,
+  createSessionFromV4Session,
   deleteSession
 } from './session.request';
 import { createRequestToken, createSessionWithLogin } from './token.request';
@@ -9,7 +9,7 @@ import { createRequestToken, createSessionWithLogin } from './token.request';
 export const Authentication = {
   createGuestSession,
   createSession,
-  createV3SessionFromV4Session,
+  createSessionFromV4Session,
   deleteSession,
   createRequestToken,
   createSessionWithLogin

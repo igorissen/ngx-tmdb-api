@@ -2,7 +2,7 @@ import { Observable } from 'rxjs';
 import {
   TMDbAuthentication,
   TMDbCreateSessionRequestDTO,
-  TMDbCreateV3SessionFromV4SessionRequestDTO,
+  TMDbCreateSessionFromV4SessionRequestDTO,
   TMDbDeleteSessionRequestDTO
 } from '../../dtos/authentication';
 import { Request } from '../../request';
@@ -18,11 +18,11 @@ export const createSession = (
   }).execute();
 };
 
-export const createV3SessionFromV4Session = (
-  options: RequestOptions<TMDbCreateV3SessionFromV4SessionRequestDTO>
+export const createSessionFromV4Session = (
+  options: RequestOptions<TMDbCreateSessionFromV4SessionRequestDTO>
 ): Observable<TMDbAuthentication | null> => {
   return new Request<
-    TMDbCreateV3SessionFromV4SessionRequestDTO,
+    TMDbCreateSessionFromV4SessionRequestDTO,
     TMDbAuthentication
   >({
     ...options,
