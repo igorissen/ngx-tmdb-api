@@ -1,9 +1,9 @@
-import { fetchAvailableRegions } from './available-regions.request';
-import { fetchMovieAvailableProviders } from './movie-providers.request';
-import { fetchTvAvailableProviders } from './tv-providers.request';
+import { getAvailableRegions } from './available-regions.request';
+import { getMovieProviders } from './movie-providers.request';
+import { getTvProviders } from './tv-providers.request';
 
 export const WatchProviders = {
-  fetchAvailableRegions,
-  fetchMovieAvailableProviders,
-  fetchTvAvailableProviders
+  getAvailableRegions,
+  getMovieProviders,
+  getTvProviders
 };
