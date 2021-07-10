@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
 
 - [Account](https://developers.themoviedb.org/3/account)
 - [Authentication](https://developers.themoviedb.org/3/authentication)
-- [ ] Add `Certifications` resources
+- [Certifications](https://developers.themoviedb.org/3/certifications)
 - [ ] Add `Changes` resources
 - [ ] Add `Collections` resources
 - [ ] Add `Companies` resources

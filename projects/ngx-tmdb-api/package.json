@@ -1,6 +1,6 @@
 {
   "name": "@igorissen/ngx-tmdb-api",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "TMDB api wrapper for Angular",
   "keywords": [
     "tmdb",
