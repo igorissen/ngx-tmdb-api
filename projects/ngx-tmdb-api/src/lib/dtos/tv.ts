@@ -9,6 +9,7 @@ import {
   TMDbEpisodeGroup,
   TMDbExternalIds,
   TMDbGenre,
+  TMDbMedia,
   TMDbMediaImages,
   TMDbMediaKeywords,
   TMDbMediaTranslations,
@@ -47,14 +48,10 @@ export type TMDbTvSeasonDetails = {
   poster_path?: string;
   season_number?: number;
 };
-export type TMDbTvDetails = {
-  backdrop_path?: string;
+export type TMDbTvDetails = TMDbMedia & {
   created_by?: TMDbCrew[];
   episode_run_time?: number[];
   first_air_date?: string;
-  genres?: TMDbGenre[];
-  homepage?: string;
-  id?: number;
   in_production?: boolean;
   languages?: string[];
   last_air_date?: string;
@@ -63,17 +60,9 @@ export type TMDbTvDetails = {
   number_of_episodes?: number;
   number_of_seasons?: number;
   origin_country?: string[];
-  original_language?: string;
   original_name?: string;
-  overview?: string;
-  popularity?: number;
-  poster_path?: string;
-  production_companies?: TMDbProductionCompany[];
   seasons?: TMDbTvSeasonDetails[];
-  status?: string;
   type?: string;
-  vote_average?: number;
-  vote_count?: number;
 };
 export type TMDbTvAlternativeTitles = {
   id?: number;

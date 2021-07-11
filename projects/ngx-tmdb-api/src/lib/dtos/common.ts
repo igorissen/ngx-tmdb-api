@@ -1,4 +1,5 @@
 import { Gender } from '../enums';
+import { TMDbTvSeasonDetails } from './tv';
 
 export type TMDbVideoType =
   | 'Trailer'
@@ -275,6 +276,20 @@ export type TMDbCertification = {
   certification?: string;
   meaning?: string;
   order?: number;
+};
+export type TMDbMedia = {
+  backdrop_path?: string;
+  genres?: TMDbGenre[];
+  homepage?: string;
+  id?: number;
+  original_language?: string;
+  overview?: string;
+  popularity?: number;
+  poster_path?: string;
+  production_companies?: TMDbProductionCompany[];
+  status?: string;
+  vote_average?: number;
+  vote_count?: number;
 };
 
 export type TMDbRateRequestDTO = {
