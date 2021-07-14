@@ -135,11 +135,14 @@ export type TMDbImage = {
   vote_average?: number;
   vote_count?: number;
   width?: number;
+  id?: string;
+  file_type?: string;
 };
 export type TMDbMediaImages = {
   id?: number;
   backdrops?: TMDbImage[];
   posters?: TMDbImage[];
+  logos?: TMDbImage[];
 };
 export type TMDbKeyword = {
   id?: number;

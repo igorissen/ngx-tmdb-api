@@ -23,6 +23,7 @@ export type PathParameters = {
   tv_id?: number | string;
   account_id?: number | string;
   collection_id?: number | string;
+  company_id?: number | string;
 };
 
 export type RequestOptions<T> = {
