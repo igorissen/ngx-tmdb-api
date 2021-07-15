@@ -66,6 +66,7 @@ export type PathParameters = {
   company_id?: number | string;
   credit_id?: number | string;
   external_id?: number | string;
+  guest_session_id?: number | string;
 };
 
 export type RequestOptions<T> = {
