@@ -19,6 +19,7 @@ export * from './lib/dtos/keywords';
 export * from './lib/dtos/lists';
 export * from './lib/dtos/movies';
 export * from './lib/dtos/networks';
+export * from './lib/dtos/trending';
 export * from './lib/dtos/tv';
 export * from './lib/dtos/watch-providers';
 
@@ -42,6 +43,7 @@ export * from './lib/resources/keywords';
 export * from './lib/resources/lists';
 export * from './lib/resources/movies';
 export * from './lib/resources/networks';
+export * from './lib/resources/trending';
 export * from './lib/resources/tv';
 export * from './lib/resources/watch-providers';
 
