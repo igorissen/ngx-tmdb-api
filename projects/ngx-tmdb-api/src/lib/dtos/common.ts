@@ -184,6 +184,7 @@ export type TMDbMediaTranslations = {
   translations?: TMDbTranslation[];
 };
 export type TMDbPaginated<T> = {
+  id?: number;
   page?: number;
   total_pages?: number;
   total_results?: number;
