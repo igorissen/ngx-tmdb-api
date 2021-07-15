@@ -55,6 +55,7 @@ export type QueryParameters = {
   with_networks?: string;
   include_null_first_air_dates?: boolean;
   screened_theatrically?: boolean;
+  external_source?: string;
 };
 
 export type PathParameters = {
@@ -64,6 +65,7 @@ export type PathParameters = {
   collection_id?: number | string;
   company_id?: number | string;
   credit_id?: number | string;
+  external_id?: number | string;
 };
 
 export type RequestOptions<T> = {
