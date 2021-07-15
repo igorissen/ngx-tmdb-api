@@ -71,6 +71,7 @@ export type PathParameters = {
   guest_session_id?: number | string;
   keyword_id?: number | string;
   list_id?: number | string;
+  network_id?: number | string;
 };
 
 export type RequestOptions<T> = {

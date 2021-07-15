@@ -239,6 +239,8 @@ export type TMDbNetwork = {
   name?: string;
   logo_path?: string;
   origin_country?: string;
+  headquarters?: string;
+  homepage?: string;
 };
 export type TMDbAccountStates = {
   id?: number;
