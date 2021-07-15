@@ -38,6 +38,7 @@ export * from './lib/resources/find';
 export * from './lib/resources/genres';
 export * from './lib/resources/guest-sessions';
 export * from './lib/resources/keywords';
+export * from './lib/resources/lists';
 export * from './lib/resources/movies';
 export * from './lib/resources/tv';
 export * from './lib/resources/watch-providers';

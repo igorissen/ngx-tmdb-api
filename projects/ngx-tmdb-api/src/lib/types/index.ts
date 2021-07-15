@@ -56,6 +56,8 @@ export type QueryParameters = {
   include_null_first_air_dates?: boolean;
   screened_theatrically?: boolean;
   external_source?: string;
+  movie_id?: number;
+  confirm?: boolean;
 };
 
 export type PathParameters = {
@@ -68,6 +70,7 @@ export type PathParameters = {
   external_id?: number | string;
   guest_session_id?: number | string;
   keyword_id?: number | string;
+  list_id?: number | string;
 };
 
 export type RequestOptions<T> = {

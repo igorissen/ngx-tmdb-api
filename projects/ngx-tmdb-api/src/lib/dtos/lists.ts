@@ -1,3 +1,4 @@
+import { TMDbResponseStatus } from './common';
 import { TMDbMovieDetails } from './movies';
 
 export type TMDbListDetails = {
@@ -11,3 +12,21 @@ export type TMDbListDetails = {
   poster_path?: string;
   items?: TMDbMovieDetails[];
 };
+export type TMDbListItemStatus = {
+  id?: string;
+  item_present?: boolean;
+};
+export type TMDbListCreateStatus = TMDbResponseStatus & {
+  success?: boolean;
+  list_id?: number;
+};
+
+export type TMDbCreateListRequestDTO = {
+  name?: string;
+  description?: string;
+  language?: string;
+};
+export type TMDbAddMovieRequestDTO = {
+  media_id: number | string;
+};
+export type TMDbRemoveMovieRequestDTO = TMDbAddMovieRequestDTO;
