@@ -24,6 +24,7 @@ export type PathParameters = {
   account_id?: number | string;
   collection_id?: number | string;
   company_id?: number | string;
+  credit_id?: number | string;
 };
 
 export type RequestOptions<T> = {
