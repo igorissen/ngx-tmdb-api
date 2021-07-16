@@ -60,20 +60,22 @@ export type QueryParameters = {
   confirm?: boolean;
 };
 
+export type Id = number | string;
 export type PathParameters = {
-  movie_id?: number | string;
-  tv_id?: number | string;
-  account_id?: number | string;
-  collection_id?: number | string;
-  company_id?: number | string;
-  credit_id?: number | string;
-  external_id?: number | string;
-  guest_session_id?: number | string;
-  keyword_id?: number | string;
-  list_id?: number | string;
-  network_id?: number | string;
-  person_id?: number | string;
-  review_id?: number | string;
+  movie_id?: Id;
+  tv_id?: Id;
+  account_id?: Id;
+  collection_id?: Id;
+  company_id?: Id;
+  credit_id?: Id;
+  external_id?: Id;
+  guest_session_id?: Id;
+  keyword_id?: Id;
+  list_id?: Id;
+  network_id?: Id;
+  person_id?: Id;
+  review_id?: Id;
+  episode_group_id?: Id;
   time_window?: 'day' | 'week';
   media_type?: 'all' | 'movie' | 'tv' | 'person';
 };

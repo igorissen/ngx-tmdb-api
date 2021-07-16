@@ -68,6 +68,23 @@ export type TMDbTvAlternativeTitles = {
   id?: number;
   results?: TMDbAlternativeTitle[];
 };
+export type TMDbTvEpisodeGroup = {
+  id?: string;
+  name?: string;
+  order?: number;
+  episodes?: TMDbTvEpisodeDetails[];
+  locked?: boolean;
+};
+export type TMDbTvEpisodeGroupsDetails = {
+  description?: string;
+  episode_count?: number;
+  group_count?: number;
+  groups?: TMDbTvEpisodeGroup[];
+  id?: string;
+  name?: string;
+  network?: TMDbNetwork;
+  type?: number;
+};
 
 export type TMDbTvWatchProviders = TMDbMediaWatchProviders;
 export type TMDbTvAccountStates = TMDbAccountStates;
