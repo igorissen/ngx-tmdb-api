@@ -123,6 +123,9 @@ export type TMDbCrew = {
 export type TMDbExternalIds = {
   imdb_id?: string;
   facebook_id?: string;
+  freebase_mid?: string;
+  freebase_id?: string;
+  tvrage_id?: number;
   instagram_id?: string;
   twitter_id?: string;
   id?: number;
@@ -143,6 +146,7 @@ export type TMDbMediaImages = {
   backdrops?: TMDbImage[];
   posters?: TMDbImage[];
   logos?: TMDbImage[];
+  profiles?: TMDbImage[];
 };
 export type TMDbKeyword = {
   id?: number;
@@ -178,6 +182,9 @@ export type TMDbTranslation = {
   iso_3166_1?: string;
   name?: string;
   english_name?: string;
+  data?: {
+    biography?: string;
+  };
 };
 export type TMDbMediaTranslations = {
   id?: number;

@@ -72,6 +72,7 @@ export type PathParameters = {
   keyword_id?: number | string;
   list_id?: number | string;
   network_id?: number | string;
+  person_id?: number | string;
   time_window?: 'day' | 'week';
   media_type?: 'all' | 'movie' | 'tv' | 'person';
 };
