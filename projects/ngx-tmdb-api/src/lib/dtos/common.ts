@@ -205,15 +205,24 @@ export type TMDbResults<T> = {
   id?: number;
   results?: T[];
 };
+export type TMDbReviewAuthor = {
+  name?: string;
+  username?: string;
+  avatar_path?: string;
+  rating?: number;
+};
 export type TMDbReview = {
   id?: string;
   author?: string;
+  author_details?: TMDbReviewAuthor;
   content?: string;
-  url?: string;
+  created_at?: string;
   iso_639_1?: string;
   media_id?: number;
   media_title?: string;
   media_type?: string;
+  updated_at?: string;
+  url?: string;
 };
 export type TMDbList = {
   description?: string;

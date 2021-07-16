@@ -73,6 +73,7 @@ export type PathParameters = {
   list_id?: number | string;
   network_id?: number | string;
   person_id?: number | string;
+  review_id?: number | string;
   time_window?: 'day' | 'week';
   media_type?: 'all' | 'movie' | 'tv' | 'person';
 };
