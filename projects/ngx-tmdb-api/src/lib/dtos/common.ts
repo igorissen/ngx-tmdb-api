@@ -1,13 +1,14 @@
 import { Gender } from '../enums';
-import { TMDbTvSeasonDetails } from './tv';
 
 export type TMDbVideoType =
   | 'Trailer'
   | 'Teaser'
   | 'Clip'
   | 'Featurette'
+  | 'Opening Credits'
   | 'Behind the Scenes'
-  | 'Bloopers';
+  | 'Bloopers'
+  | 'Recap';
 
 export type TMDbGenre = {
   id?: number;
@@ -272,10 +273,24 @@ export type TMDbAccountStates = {
   rated?: boolean | { value?: number };
   episode_number?: number;
 };
+export type TMDbGuestStars = {
+  character_name?: string;
+  credit_id?: string;
+  order?: number;
+  adult?: boolean;
+  gender?: number;
+  id?: number;
+  known_for_department?: string;
+  name?: string;
+  original_name?: string;
+  popularity?: number;
+  profile_path?: string;
+};
 export type TMDbCredits = {
   id?: number;
   cast?: TMDbCast[];
   crew?: TMDbCrew[];
+  guest_stars?: TMDbGuestStars[];
 };
 export type TMDbContentRating = {
   iso_3166_1?: string;
