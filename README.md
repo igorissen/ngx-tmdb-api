@@ -75,11 +75,11 @@ export class AppComponent implements OnInit {
 - [Movies](https://developers.themoviedb.org/3/movies)
 - [Networks](https://developers.themoviedb.org/3/networks)
 - [Trending](https://developers.themoviedb.org/3/trending)
-- [ ] Add `People` resources
-- [ ] Add `Reviews` resources
-- [ ] Add `Search` resources
+- [People](https://developers.themoviedb.org/3/people)
+- [Reviews](https://developers.themoviedb.org/3/reviews)
+- [Search](https://developers.themoviedb.org/3/search)
 - [TV](https://developers.themoviedb.org/3/tv)
-- [ ] Add `TV Seasons` resources
-- [ ] Add `TV Episodes` resources
-- [ ] Add `TV Episode Groups` resources
+- [TV Seasons](https://developers.themoviedb.org/3/tv-seasons)
+- [TV Episodes](https://developers.themoviedb.org/3/tv-episodes)
+- [TV Episode Groups](https://developers.themoviedb.org/3/tv-episode-groups)
 - [Watch Providers](https://developers.themoviedb.org/3/watch-providers)
