@@ -39,7 +39,12 @@ export type TMDbChangeItem = {
   action?: string;
   time?: string;
   iso_639_1?: string;
-  value?: any;
+  value?:
+    | string
+    | {
+        episode_id?: number;
+        episode_number?: number;
+      };
   original_value?: any;
 };
 export type TMDbChange = {
@@ -170,7 +175,7 @@ export type TMDbVideo = {
   key?: string;
   name?: string;
   site?: string;
-  size?: number;
+  size?: 360 | 480 | 720 | 1080;
   type?: TMDbVideoType;
 };
 export type TMDbMediaVideos = {
@@ -184,6 +189,8 @@ export type TMDbTranslation = {
   english_name?: string;
   data?: {
     biography?: string;
+    name?: string;
+    overview?: string;
   };
 };
 export type TMDbMediaTranslations = {
@@ -263,6 +270,7 @@ export type TMDbAccountStates = {
   favorite?: boolean;
   watchlist?: boolean;
   rated?: boolean | { value?: number };
+  episode_number?: number;
 };
 export type TMDbCredits = {
   id?: number;

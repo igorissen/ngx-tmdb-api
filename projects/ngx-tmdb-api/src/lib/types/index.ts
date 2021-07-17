@@ -76,6 +76,7 @@ export type PathParameters = {
   person_id?: Id;
   review_id?: Id;
   episode_group_id?: Id;
+  season_number?: Id;
   time_window?: 'day' | 'week';
   media_type?: 'all' | 'movie' | 'tv' | 'person';
 };

@@ -52,6 +52,7 @@ export * from './lib/resources/search';
 export * from './lib/resources/trending';
 export * from './lib/resources/tv';
 export * from './lib/resources/tv-episode-groups';
+export * from './lib/resources/tv-seasons';
 export * from './lib/resources/watch-providers';
 
 export * from './lib/types/module-options';

@@ -106,5 +106,6 @@ export type TMDbTvAiringToday = TMDbPaginated<TMDbTvDetails>;
 export type TMDbTvOnTheAir = TMDbPaginated<TMDbTvDetails>;
 export type TMDbTvEpisodeGroups = TMDbResults<TMDbEpisodeGroup>;
 export type TMDbTvReviews = TMDbPaginated<TMDbReview>;
+export type TMDbTvSeasonAccountStates = TMDbResults<TMDbAccountStates>;
 
 export type TMDbRateTvRequestDTO = TMDbRateRequestDTO;
